@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+log_miml/
+results/
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+.idea/
+.vscode/
+.pytest_cache/
+*.log
+*.tmp
+*.zip
+Thumbs.db
+.DS_Store

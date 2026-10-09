@@ -1,0 +1,54 @@
+{
+  "source": {
+    "title": "Multi-Instance Multi-Label Learning",
+    "authors": "Zhi-Hua Zhou, Min-Ling Zhang, Sheng-Jun Huang, Yu-Feng Li",
+    "venue": "Artificial Intelligence 176(1), 2012",
+    "url": "https://www.lamda.nju.edu.cn/liyf/paper/aij12-miml.pdf",
+    "table": 1
+  },
+  "protocol": {
+    "dataset": "LAMDA Scene MIML",
+    "num_bags": 2000,
+    "train_bags": 1500,
+    "test_bags": 500,
+    "repetitions": 30,
+    "partition": "random train/test partitions"
+  },
+  "metrics": {
+    "hamming_loss": "lower",
+    "one_error": "lower",
+    "coverage": "lower",
+    "ranking_loss": "lower",
+    "average_precision": "higher"
+  },
+  "algorithms": {
+    "MIMLBoost": {
+      "hamming_loss": [0.193, 0.007],
+      "one_error": [0.347, 0.019],
+      "coverage": [0.984, 0.049],
+      "ranking_loss": [0.178, 0.011],
+      "average_precision": [0.779, 0.012]
+    },
+    "MIMLSVM": {
+      "hamming_loss": [0.189, 0.009],
+      "one_error": [0.354, 0.022],
+      "coverage": [1.087, 0.047],
+      "ranking_loss": [0.201, 0.011],
+      "average_precision": [0.765, 0.013]
+    },
+    "MIMLSVMmi": {
+      "hamming_loss": [0.195, 0.008],
+      "one_error": [0.317, 0.018],
+      "coverage": [1.068, 0.052],
+      "ranking_loss": [0.197, 0.011],
+      "average_precision": [0.783, 0.011]
+    },
+    "MIMLNN": {
+      "hamming_loss": [0.185, 0.008],
+      "one_error": [0.351, 0.026],
+      "coverage": [1.057, 0.054],
+      "ranking_loss": [0.196, 0.013],
+      "average_precision": [0.771, 0.015]
+    }
+  }
+}

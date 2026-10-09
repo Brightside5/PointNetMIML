@@ -1,0 +1,22 @@
+LAMDA Scene MIML dataset
+
+Official dataset page:
+https://www.lamda.nju.edu.cn/data_MIMLimage.ashx
+
+Required dataset acknowledgment/citation:
+Z.-H. Zhou and M.-L. Zhang. Multi-instance multi-label learning with
+application to scene classification. Advances in Neural Information
+Processing Systems 19 (NIPS 2006), MIT Press, 2007, pp.1609-1616.
+
+The official provider offers this dataset for academic use and requests
+acknowledgment/citation. See the official page for its usage terms.
+
+Contents:
+miml data.mat: all 2000 official processed bags, targets, and class_name.
+scene_full_pointnet.npz: the same 2000 bags in the existing reproducible
+1500/500 split, seed 42. Original images are not needed by this feature-based
+training project and are not bundled.
+
+Original source sample k corresponds to MATLAB bags{k,1} and targets(:,k).
+Each bag has 9 instances with 15 features each. Label order:
+desert, mountains, sea, sunset, trees.
